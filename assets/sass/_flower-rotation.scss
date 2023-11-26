@@ -1,0 +1,59 @@
+.story__article::after {
+    width: 188px;
+    height: 188px;
+}
+
+.story h2::after,
+.site-footer::before {
+    width: 155px;
+    height: 154px;
+}
+
+#studio {
+    & h2::before {
+        width: 203px;
+        height: 189px;
+    }
+
+    & h2::after {
+        width: 109px;
+        height: 109px;
+    }
+}
+
+.site-footer {
+    &::after {
+        width: 173px;
+        height: 169px;
+    }
+
+    & ul::after {
+        width: 646px;
+        height: 646px;
+    }
+}
+
+//durée de l'animation
+//linear permet une accélération régulière
+//infinite reproduit l'animation à l'infini
+.flowers,
+.story__article::after,
+.story h2::after,
+#studio h2::before,
+#studio h2::after,
+#oscars::before,
+#oscars::after,
+.site-footer ul::after {
+
+    animation: flower-rotation 8s linear infinite;
+}
+
+@keyframes flower-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

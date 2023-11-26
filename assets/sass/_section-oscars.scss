@@ -1,0 +1,73 @@
+#oscars {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 140px;
+
+    .container-oscars {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 78%;
+        height: 300px;
+        background-image: url("./assets/images/background-oscars.png");
+        background-repeat: no-repeat;
+        background-size: 72%;
+        justify-content: center;
+    }
+
+    h3 {
+        color: #FFF5E9;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Quicksand;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.84px;
+        text-align: start;
+        width: 72%;
+        height: 187px;
+        flex-shrink: 0;
+        margin-top: 14px;
+    }
+
+    .logo-oscars {
+        width: 278px;
+        height: 129px;
+        flex-shrink: 0;
+        margin-top: 40px;
+    }
+
+    &::before {
+        content: url("./assets/images/Sunflower.png");
+        position: absolute;
+        left: 9em;
+        top: -7em;
+        width: 155px;
+        height: 154px;
+    }
+
+    &::after {
+        content: url("./assets/images/orchid.png");
+        position: absolute;
+        right: -8em;
+        bottom: 19.8em;
+        width: 173px;
+        height: 169px;
+    }
+}
+
+// on enleve les fleurs du footer
+.site-footer {
+    &::before {
+        content: none;
+    }
+
+    &::after {
+        content: none;
+    }
+
+}

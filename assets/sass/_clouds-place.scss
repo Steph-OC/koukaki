@@ -1,0 +1,22 @@
+.story #place {
+    background-image: url("./assets/images/Studio_Koukaki-image_place.png");
+
+    & h3 {
+        z-index: 1;
+    }
+
+    .little-cloud {
+        position: absolute;
+        left: 52%;
+        top: 77%;
+        filter: blur(15px);
+    }
+
+    .big-cloud {
+        position: absolute;
+        top: 66%;
+        left: 69%;
+        filter: blur(15px);
+    }
+}
+ 

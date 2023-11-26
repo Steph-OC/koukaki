@@ -1,0 +1,15 @@
+#story.story {
+  overflow: hidden;
+
+  & #characters {
+    h3 {
+      width: 55%;
+    }
+
+  }
+}
+
+.swiper-slide {
+  width: 300px;
+  height: auto;
+}

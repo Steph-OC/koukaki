@@ -1,0 +1,51 @@
+h2 {
+      .bloc-title-studio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .animTitle2 {
+        margin-left: 10px;
+    }
+}
+
+.visible {
+    display: block;
+    opacity: 0;
+    animation: scrollAnimate 800ms;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+    &.animTitle2 {
+        opacity: 0;
+        animation: scrollAnimate2 500ms;
+        animation-delay: 0.8s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes scrollAnimate {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes scrollAnimate2 {
+
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
